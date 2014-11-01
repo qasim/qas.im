@@ -45,7 +45,7 @@ body {
       }
 
       .navigation .item.active {
-        background-color: #59a2a4;
+        background-color: rgba(20,60,60,0.3);
       }
 
   .header.small {
