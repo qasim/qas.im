@@ -176,6 +176,10 @@ body {
         background: url(../img/grubber.png) center center no-repeat;
         background-size: cover;
       }
+      .french {
+        background: url(../img/french.png) center center no-repeat;
+        background-size: cover;
+      }
 
       .main a:link, .main a:visited {
         font-family: 'cooper_hewittmedium';
