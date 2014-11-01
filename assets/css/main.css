@@ -176,7 +176,7 @@ body {
       .main a:link, .main a:visited {
         font-family: 'cooper_hewittmedium';
         text-decoration: none;
-        color: #59a2a4;
+        color: #000;
       }
 
       .main a:hover {
