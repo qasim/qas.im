@@ -30,7 +30,7 @@ $(document).ready(function() {
     if($(window).width() > 1000) {
       if(scroll == 0) {
         setHeaderSize(96);
-      } else if(scroll < 48) {
+      } else if(scroll > 0 && scroll < 48) {
         setHeaderSize(96 - $(window).scrollTop());
       } else if (scroll >= 48) {
         setHeaderSize(48, true);
