@@ -6,14 +6,13 @@ body {
 }
 
   .header {
-    height: 96px;
     line-height: 96px;
     background-color: #96d0d2;
     position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
-    z-index:10000;
+    z-index: 100000;
   }
 
     .header .title {
@@ -22,6 +21,8 @@ body {
       color: #fff;
       letter-spacing: 3px;
       cursor: default;
+      z-index: 0;
+      pointer-events:none;
     }
 
       .header .title strong {
