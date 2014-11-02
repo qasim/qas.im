@@ -5,7 +5,7 @@ $(document).ready(function() {
       'height': $(window).height() - 230
     });
     $('.header .title').removeAttr('style');
-    //$('.header').removeAttr('style');
+    $('.header').removeAttr('style');
     $(window).scroll();
   });
 
