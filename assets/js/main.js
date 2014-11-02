@@ -44,13 +44,15 @@ $(document).ready(function() {
           'opacity': 1
         });
       } else if(scroll > 0 && scroll <= 96) {
-        $('.header .title').css('visibility', 'visible')
         $('.header .title').css({
           'height': 96 - scroll,
           'opacity': 1 - (scroll / 96)
         });
       } else if(scroll > 96) {
-        $('.header .title').css('visibility', 'hidden')
+        $('.header .title').css({
+          'height': 0,
+          'opacity': 0
+        });
       }
     }
 

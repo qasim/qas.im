@@ -245,6 +245,12 @@ body {
 
 }
 
+@media only screen and (max-width : 768px) {
+  #projects .grid-60 {
+    padding-top:12px;
+  }
+}
+
 @media only screen and (max-width : 560px) {
 
   .header {
@@ -275,8 +281,6 @@ body {
     border-bottom: 1px solid #ccc;
   }
 
-  #projects .grid-60 {
-    padding-top:12px;
-  }
+
 
 }
