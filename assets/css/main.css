@@ -245,10 +245,18 @@ body {
 
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
+
   #projects .grid-60 {
     padding-top:12px;
   }
+
+  .main .title {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+  }
+
 }
 
 @media only screen and (max-width : 560px) {
@@ -274,13 +282,5 @@ body {
   .header-spacer {
     height: 0px;
   }
-
-  .main .title {
-    padding-bottom: 12px;
-    margin-bottom: 12px;
-    border-bottom: 1px solid #ccc;
-  }
-
-
 
 }
