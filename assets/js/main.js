@@ -37,7 +37,7 @@ $(document).ready(function() {
         setHeaderSize(48, true);
       }
     } else {
-      if(scroll == 0 || $(window).width() <= 560) {
+      if(scroll <= 0 || $(window).width() <= 560) {
         $('.header .title').css('visibility', 'visible')
         $('.header .title').css({
           'height': 96,
