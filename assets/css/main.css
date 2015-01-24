@@ -193,7 +193,7 @@ body {
       }
 
       .main a:hover {
-        border-bottom: 1px dotted #59a2a4;
+        border-bottom: 1px dotted #000;
       }
 
       #connect .grid-85 {
