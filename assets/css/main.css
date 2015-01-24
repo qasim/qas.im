@@ -78,6 +78,10 @@ body {
       line-height: 30px;
     }
 
+      .main .content img {
+        height: 0.8em;
+      }
+
       .main .content .faint {
         font-size: 14px;
         color: rgba(0,0,0,0.5);
