@@ -1,5 +1,5 @@
 body {
-  background-image: #FFFFFF;
+  background-image: #f3fafa;
   margin: 0px;
   -webkit-font-smoothing: antialiased;
   font-size: 18px;
@@ -7,13 +7,13 @@ body {
 
   .header {
     line-height: 96px;
-    background-color: #336699;
+    background-color: #96d0d2;
     position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
     z-index: 100000;
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   }
 
     .header .title {
@@ -47,7 +47,7 @@ body {
       }
 
       .navigation .item.active {
-        background-color: rgba(0,0,0,0.33);
+        background-color: rgba(0,0,0,0.2);
       }
 
   .header.small {
@@ -283,6 +283,7 @@ body {
 
   .header {
     position: relative;
+    box-shadow: none;
   }
 
 	.header .title {
