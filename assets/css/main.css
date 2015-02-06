@@ -1,5 +1,5 @@
 body {
-  background-image: url('../img/brilliant.png');
+  background-image: #FFFFFF;
   margin: 0px;
   -webkit-font-smoothing: antialiased;
   font-size: 18px;
@@ -7,12 +7,13 @@ body {
 
   .header {
     line-height: 96px;
-    background-color: #96d0d2;
+    background-color: #336699;
     position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
     z-index: 100000;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
   }
 
     .header .title {
@@ -46,7 +47,7 @@ body {
       }
 
       .navigation .item.active {
-        background-color: rgba(20,60,60,0.3);
+        background-color: rgba(0,0,0,0.33);
       }
 
   .header.small {
@@ -88,10 +89,12 @@ body {
       }
 
       .main .content .technology {
-        display: inline;
-        padding: 4px 6px;
-        margin-right: 12px;
         background: rgba(0, 0, 0, 0.07);
+        display: inline-block;
+        padding: 0px 6px;
+        margin-right: 12px;
+        margin-bottom: 3px;
+        line-height: 24px;
       }
 
       .main .content .spacer {
@@ -121,7 +124,7 @@ body {
       }
 
       .project-image {
-        border: 4px solid rgba(0, 0, 0, 0.07);
+        border: 4px solid #dbdbdb;
         height: 168px;
       }
 
@@ -151,6 +154,7 @@ body {
       .project-technologies .technology {
         margin-left: 3px;
         margin-right: 0px !important;
+        display: inline-block;
       }
 
       .project-technologies .technology.link {
@@ -161,6 +165,18 @@ body {
         background: #fff;
       }
 
+      .rendezvous{
+        background: url(../img/rendezvous.png) center center no-repeat;
+        background-size: cover;
+      }
+      .autio{
+        background: url(../img/autio.png) center center no-repeat;
+        background-size: cover;
+      }
+      .uoft-course-api {
+        background: url(../img/uoft-course-api.png) center center no-repeat;
+        background-size: cover;
+      }
       .uoft-class-distances {
         background: url(../img/uoft-class-distances.png) center center no-repeat;
         background-size: cover;
@@ -279,7 +295,7 @@ body {
 
   .header .navigation .item {
     display: block;
-    background: #72B3B5;
+    background: rgba(0,0,0,0.2);
     margin: 12px;
   }
 
