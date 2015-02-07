@@ -57,16 +57,16 @@ $(document).ready(function() {
     }
 
     var about_bottom = $('#about').offset().top + $('#about').height() - 48
-    var resume_bottom = $('#resume').offset().top + $('#resume').height() - 48
+    //var resume_bottom = $('#resume').offset().top + $('#resume').height() - 48
     var projects_bottom = $('#projects').offset().top + $('#projects').height() - 48
 
     if(scroll >= 0 && scroll < about_bottom) {
         $('.item').removeClass('active')
         $('#_about').addClass('active')
-    } else if(scroll >= about_bottom && scroll < resume_bottom) {
+    } /*else if(scroll >= about_bottom && scroll < resume_bottom) {
       $('.item').removeClass('active')
       $('#_resume').addClass('active')
-    } else if(scroll >= resume_bottom && scroll < projects_bottom) {
+    }*/ else if(scroll >= about_bottom) { //change about to resume
       $('.item').removeClass('active')
       $('#_projects').addClass('active')
     }
