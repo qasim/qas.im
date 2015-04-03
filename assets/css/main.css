@@ -83,6 +83,17 @@ body {
         height: 0.8em;
       }
 
+      .main .content a.inline-logo {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        height: 25px;
+      }
+
+      .main .content a.inline-logo:hover {
+
+      }
+
       .main .content .faint {
         font-size: 14px;
         color: rgba(0,0,0,0.5);
