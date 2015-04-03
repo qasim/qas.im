@@ -13,7 +13,6 @@ body {
     top: 0px;
     width: 100%;
     z-index: 100000;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   }
 
     .header .title {
@@ -24,6 +23,7 @@ body {
       cursor: default;
       z-index: 0;
       pointer-events:none;
+      text-align: center;
     }
 
       .header .title strong {
@@ -66,7 +66,7 @@ body {
   .main {
     font-family: 'cooper_hewittlight';
     margin-top: 48px;
-    margin-bottom: 64px;
+    margin-bottom: 48px;
   }
 
     .main .title {
@@ -271,7 +271,7 @@ body {
   }
 
   .header-spacer {
-    height: 146px;
+
   }
 
 }
@@ -293,8 +293,7 @@ body {
 @media only screen and (max-width : 560px) {
 
   .header {
-    position: relative;
-    box-shadow: none;
+
   }
 
 	.header .title {
@@ -312,7 +311,7 @@ body {
   }
 
   .header-spacer {
-    height: 0px;
+    
   }
 
 }
