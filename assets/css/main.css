@@ -1,9 +1,8 @@
 body {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
   font-size: 19px;
-  color: #666;
   text-align: center;
+  color: #666;
   background: #f6f6f6;
 }
 
@@ -96,5 +95,5 @@ a:hover {
   .bar {
     border-top: 6px solid #3f85db;
   }
-
+  
 }
