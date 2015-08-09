@@ -37,10 +37,6 @@ body {
   margin-bottom: 26px;
 }
 
-.content-piece i {
-  font-family: 'cooper_hewittlight_italic';
-}
-
 a:link, a:visited {
   font-family: 'cooper_hewittmedium';
   text-decoration: none;
