@@ -1,0 +1,71 @@
+body {
+  font-family: 'Source Serif Pro';
+  font-weight: 400;
+  font-size: 18px;
+  color: #666;
+  background: #f6f6f6;
+  margin: 0;
+}
+
+.bar {
+  border-top: 4px solid #000;
+  margin-bottom: 6px;
+}
+
+.header {
+  font-family: 'Tuffy Bold';
+  font-weight: bold;
+  font-size: 48px;
+  color: #000;
+  margin-left: 24px;
+  margin-bottom: 7px;
+}
+
+.content {
+  max-width: 416px;
+  margin-left: 24px;
+  margin-right: 24px;
+  line-height: 24px;
+}
+
+.content p:first-child {
+  margin-top: 0;
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}
+
+a:link, a:visited {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  border-bottom: 1px dotted #5f5f5f;
+}
+
+#uoft {
+  color: #002f65;
+}
+
+#github {
+  color: #373737;
+}
+
+#twitter {
+  color: #0084b4;
+}
+
+#instagram {
+  color: #8d5744;
+}
+
+#linkedin {
+  color: #0d4b6f;
+}
+
+#cobalt {
+  color: #005892;
+}
