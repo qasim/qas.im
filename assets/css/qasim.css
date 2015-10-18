@@ -63,6 +63,10 @@ hr {
   background: #666;
 }
 
+.content hr {
+  margin-left: 0;
+}
+
 #uoft {
   color: #002f65;
 }
@@ -115,9 +119,32 @@ hr {
   line-height: 36px;
 }
 
+.blog-post h2 {
+  font-size: 28px;
+}
+
 .blog-post {
-  margin-bottom: 24px;
   max-width: 647px;
+  padding-top: 24px;
+}
+
+.blog-post h3 {
+  margin: 0;
+  padding: 0;
+  color: #060606;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.blog-post p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.blog-post .blog-content {
+  margin-top: 24px;
+  line-height: 28px;
 }
 
 .blog-end {
