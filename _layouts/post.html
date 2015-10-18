@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang='en'>
+  {% include head.html %}
+  <body>
+    <div class="bar"></div>
+    <a href="/"><h1>Qasim Iqbal.</h1></a>
+    <div class="content blog-post">
+      <h2>{{ page.title }}</h2>
+      <span class="date">{{ page.date | date: "%b %d, %Y" }}</span>
+      <span class="length">{{ page.content | number_of_words }} words</span>
+      <span class="time">
+        {% if words < 360 %}
+          1 minute
+        {% else %}
+          {{ words | divided_by:180 }} minutes
+        {% endif %}
+      </span>
+      {{ content }}
+    </div>
+    <hr />
+    <div class="content blog-end">
+      <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="DrQas">Tweet</a>
+      <a href="http://twitter.com/DrQas" class="twitter-follow-button" data-show-count="false">Follow @DrQas</a>
+      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+      <br />
+      Have a look at some other things I've written <a href="/">here</a>.
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
