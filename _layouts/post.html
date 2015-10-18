@@ -4,19 +4,10 @@
   <body>
     <div class="bar"></div>
     <a href="/"><h1>Qasim Iqbal.</h1></a>
-  
     <div class="content blog-post">
       <h2>{{ page.title }}</h2>
       {% assign words = page.content | number_of_words %}
       <span class="date">{{ page.date | date: "%b %d, %Y" }}</span>
-      <span class="length">{{ words }} words</span>
-      <span class="time">
-        {% if words < 360 %}
-          1 minute
-        {% else %}
-          {{ words | divided_by:180 }} minutes
-        {% endif %}
-      </span>
       <hr />
       <div class="blog-content">
         {{ content }}
