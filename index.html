@@ -28,7 +28,7 @@ title: Qasim Iqbal
       <div class="post">
         <h2>{{ post.title }}</h2>
         <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
-        <span class="length">{{ post.content | number_of_words }} words</span>
+        <span class="length">{{ words }} words</span>
         <span class="time">
           {% if words < 360 %}
             1 minute
