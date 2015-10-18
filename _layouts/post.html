@@ -4,6 +4,7 @@
   <body>
     <div class="bar"></div>
     <a href="/"><h1>Qasim Iqbal.</h1></a>
+  
     <div class="content blog-post">
       <h2>{{ page.title }}</h2>
       {% assign words = page.content | number_of_words %}
@@ -16,7 +17,10 @@
           {{ words | divided_by:180 }} minutes
         {% endif %}
       </span>
-      {{ content }}
+      <hr />
+      <div class="blog-content">
+        {{ content }}
+      </div>
     </div>
     <hr />
     <div class="content blog-end">

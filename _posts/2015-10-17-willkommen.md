@@ -4,8 +4,18 @@ title: Willkommen
 date: 2015-10-17
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus erat, pretium sit amet auctor sed, viverra vitae sapien. Donec est felis, maximus vitae tellus et, congue congue dui. Ut at diam ut nulla vehicula cursus. Ut congue eget sapien fringilla viverra. Fusce molestie augue at volutpat ornare. Integer eget tellus turpis. Sed tincidunt rhoncus erat, vel congue mauris facilisis vel. Cras felis ipsum, imperdiet eget mollis ac, lacinia sit amet odio.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-Sed dolor justo, bibendum eu turpis a, euismod efficitur quam. Quisque pulvinar, turpis ac viverra iaculis, magna nunc porttitor dui, consectetur convallis orci purus in orci. Quisque congue leo porttitor sem gravida efficitur. Aliquam luctus, tellus non congue iaculis, neque est condimentum sapien, sit amet dictum urna eros et nulla. Aliquam at mauris pretium, tristique risus at, convallis purus. Duis elementum lacus id maximus venenatis. Praesent mollis venenatis enim, at ornare magna eleifend non. Integer at est vehicula, fermentum ex a, lacinia nulla. Phasellus convallis eleifend justo, et hendrerit risus sodales non. Aenean vel tristique neque. In elementum consectetur tortor a ultrices.
+### Wait, what?!
 
-Aliquam ac justo id tellus mollis placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum at aliquet lectus. Pellentesque rutrum metus eu enim laoreet sollicitudin. Donec egestas aliquet sem, rhoncus tristique leo vestibulum in. Vivamus venenatis imperdiet enim. Nam eu arcu iaculis, lacinia nisi suscipit, tincidunt ante. Donec fringilla turpis libero, in interdum augue auctor id. Aliquam erat volutpat. Cras tristique, turpis at pulvinar tincidunt, nisi tellus tristique mauris, et consectetur arcu urna eget mi. Nunc porta quis sapien non consequat. Maecenas in lectus dui.
+Yeah, I'm starting a blog. I want this to be a place where I can discuss cool topics related to software development and computer science in general. Even more than that, I want this to be a place where you can read about my personal reflections on things I care about.
+
+### And you are...?
+
+I'm a 19 year old software developer from Toronto, Canada. I'm slowly working towards an undergraduate degree in computer science from the University of Toronto, where I'm also the web dude for our [Computer Science Student Union](http://cssu.ca) and [UofTHacks](http://uofthacks.com). It's seriously been a great time so far.
+
+I spent summer 2015 interning at [Microsoft](http://microsoft.com) with the wonderful OneNote for Apple platforms team, and I'm currently lining up some awesome things for summer 2016 to follow with that. More on what that means soon!
+
+Aside from school and work, I am a huge fan of open source software and open data. I've been trying to foster a culture of open data at UofT, channeling all my energy into a new project called [Cobalt](http://cobalt.qas.im), a collection of open data web APIs with the goal of empowering developers to use UofT campus data to build cool things.
+
+Thanks for stopping by! Until next time.
