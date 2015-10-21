@@ -8,8 +8,9 @@ body {
 }
 
 a:link, a:visited {
+  font-weight: 600;
   text-decoration: none;
-  color: #464646;
+  color: #3b5998;
 }
 
 .bar {
@@ -41,12 +42,6 @@ h1 {
 
 .content p:last-child {
   margin-bottom: 0;
-}
-
-.content a:link, .content a:visited {
-  font-weight: 600;
-  text-decoration: none;
-  color: #060606;
 }
 
 .content a:hover {
@@ -111,6 +106,15 @@ hr {
   transition: 120ms all;
 }
 
+.post-break {
+  margin-top: 16px;
+  margin-bottom: 26px;
+}
+
+.post-break2 {
+  margin-bottom: 34px;
+}
+
 .post h2, .blog-post h2 {
   margin: 0;
   padding: 0;
@@ -120,12 +124,11 @@ hr {
 }
 
 .blog-post h2 {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .blog-post {
   max-width: 647px;
-  padding-top: 24px;
 }
 
 .blog-post h3 {
@@ -158,4 +161,5 @@ hr {
 .post span, .blog-post span {
   margin-right: 16px;
   color: #868686;
+  font-weight: 400;
 }

@@ -4,16 +4,16 @@
   <body>
     <div class="bar"></div>
     <a href="/"><h1>Qasim Iqbal.</h1></a>
+    <hr class="post-break" />
     <div class="content blog-post">
       <h2>{{ page.title }}</h2>
       {% assign words = page.content | number_of_words %}
       <span class="date">{{ page.date | date: "%b %d, %Y" }}</span>
-      <hr />
       <div class="blog-content">
         {{ content }}
       </div>
     </div>
-    <hr />
+    <hr class="post-break2" />
     <div class="content blog-end">
       <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="DrQas">Tweet</a>
       <a href="http://twitter.com/DrQas" class="twitter-follow-button" data-show-count="false">Follow @DrQas</a>
