@@ -8,10 +8,10 @@ Yeah, I'm starting a blog. I want this to be a place where I can discuss cool to
 
 ### And you are...?
 
-I'm a 19 year old software developer from Toronto, Canada. I'm working towards an undergraduate degree in computer science from the University of Toronto, where I'm also the web dude for our <a href="http://cssu.ca" target="blank">Computer Science Student Union</a> and <a href="http://uofthacks.com" target="blank">UofTHacks</a>. It's seriously been a great time so far.
+I'm a 19 year old software developer from Toronto, Canada. I'm completing an undergraduate degree in computer science from the University of Toronto, where I'm also the web dude for our <a href="http://cssu.ca" target="blank">Computer Science Student Union</a>. It's seriously been a great time so far.
 
-I spent summer 2015 interning at <a href="http://microsoft.com" target="blank">Microsoft</a> with the wonderful OneNote for Apple platforms team, and I'm lining up some awesome things for summer 2016 to follow with that.
+I spent this past summer at <a href="http://microsoft.com" target="blank">Microsoft</a>'s OneNote for Apple platforms team, where I worked on designing and building their native share extensions, among many other things I got my hands on.
 
-Aside from school and work, I am a huge fan of open source software and open data. I've been trying to foster a culture of open data at UofT, channeling all of my energy into a new project called <a href="http://cobalt.qas.im" target="blank">Cobalt</a>, a collection of open data web APIs with the goal of empowering developers to use UofT campus data to build cool things.
+Aside from school and work, I am a huge fan of open source software and open data. I've been trying to foster a culture of open data at the University of Toronto, channeling all of my energy into a new project called <a href="http://cobalt.qas.im" target="blank">Cobalt</a>, a collection of open data web APIs with the goal of empowering developers to use campus data to build cool things.
 
 Thanks for stopping by! Until next time.
