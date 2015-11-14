@@ -1,1 +1,3 @@
 permalink: pretty
+gems:
+  - jekyll-redirect-from
