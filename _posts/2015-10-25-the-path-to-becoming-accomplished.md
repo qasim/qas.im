@@ -32,6 +32,6 @@ How can you prevent something like this from happening? *Seek out and do things 
 
 ### Final words
 
-The path to becoming accomplished isn't clear-cut. Take the appropriate steps towards maximizing your time and energy into things you truly care about, and great accomplishments will follow as you move forward in your career.
+Take the appropriate steps towards maximizing your time and energy into things you truly care about, and great accomplishments will follow as you move forward in your career.
 
 If any of these ideas intrigued you, I highly recommend watching the whole talk by Chad Fowler <a href="https://www.youtube.com/watch?v=hsIcFf9pnCo" target="blank">here</a>.
