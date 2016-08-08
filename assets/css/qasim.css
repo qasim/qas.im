@@ -8,9 +8,8 @@ body {
 }
 
 a:link, a:visited {
-  font-weight: 600;
   text-decoration: none;
-  color: #3b5998;
+  color: #005892;
 }
 
 .bar {
@@ -42,7 +41,7 @@ h1 {
 }
 
 .content {
-  max-width: 416px;
+  max-width: 448px;
   margin-left: 24px;
   margin-right: 24px;
   line-height: 28px;
@@ -74,12 +73,13 @@ hr {
   margin-left: 0;
 }
 
+/*
 #uoft {
   color: #002f65;
 }
 
 #microsoft {
-  color: #797979;
+  color: #494949;
 }
 
 #outlook {
@@ -105,12 +105,13 @@ hr {
 #cobalt {
   color: #005892;
 }
+*/
 
 /* Blog */
 
 .blog {
   margin-left: 24px;
-  max-width: 416px;
+  max-width: 480px;
 }
 
 .post {
