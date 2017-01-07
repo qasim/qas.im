@@ -73,6 +73,16 @@ hr {
   margin-left: 0;
 }
 
+#name::after {
+  content: 'Qasim';
+  line-height: 0px;
+}
+
+#name:hover::after{
+  content: 'kæsəm';
+  font-size: 16.5px;
+}
+
 /*
 #uoft {
   color: #002f65;
