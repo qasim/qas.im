@@ -28,7 +28,11 @@ h1 {
   margin-left: 24px;
 }
 
-#name:hover::after {
+#name:focus {
+  outline: none;
+}
+
+#name:hover::after, #name:focus::after {
   content: ' “kassem”';
   color: #828282;
 }
