@@ -1,46 +1,45 @@
----
-layout: home
-title: Qasim Iqbal
-redirect_from: "/iqbal/"
----
-
-<div class="content">
-  <p>
-    Hi, I'm <span id="name"></span>.
-  </p>
-  <p>
-    I currently work at <a id="microsoft" href="https://github.com/Microsoft" title="Microsoft's GitHub organization">Microsoft</a> as a software developer on <a id="outlook" href="https://github.com/Outlook" title="Outlook's GitHub organization">Outlook for iOS</a>.
-  </p>
-  <p>
-    You can find more of me on <a id="twitter" href="https://twitter.com/DrQas">Twitter</a>, <a id="github" href="https://github.com/Qasim">GitHub</a>, <a id="github" href="https://medium.com/@DrQas">Medium</a>, and <a id="angel" href="https://angel.co/Qasim">AngelList</a>.
-  </p>
-  <p>
-    Sometimes I visit cool places and share it on <a href="https://www.snapchat.com/add/DrQas">Snapchat</a>.
-  </p>
-  <p>
-    Feel free to <a href="https://m.me/q45im" title="My Facebook Messenger URL">message</a> or <a href="mailto:me@qas.im">email</a> me if you'd like. ☺️
-  </p>
-  <!-- p>
-    Interested in working together? I am currently employed, but don't hesitate to get in touch. 😇
-  </p -->
-</div>
-
-<hr />
-
-<div class="blog">
-    <a href="https://medium.com/@qas/cobalt-and-the-case-for-open-data-ec042aa5d84d#.p1nzjcj6c">
-      <div class="post">
-        <h2>Cobalt and the case for open data</h2>
-        <span class="date">March 14, 2016</span>
-      </div>
-    </a>
-  {% for post in site.posts %}
-    {% assign words = post.content | number_of_words %}
-    <a href="{{ post.url }}">
-      <div class="post">
-        <h2>{{ post.title }}</h2>
-        <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
-      </div>
-    </a>
-  {% endfor %}
-</div>
+<!doctype html>
+<html lang='en'>
+  <head>
+    <title>Qasim Iqbal</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Qasim is a software developer.">
+    <meta name="keywords" content="qasim, iqbal, qasim iqbal, drqas, developer, product" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <meta property="og:site_name" content="Qasim Iqbal" />
+    <meta property="og:title" content="Qasim Iqbal" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:profile:first_name" content="Qasim" />
+    <meta property="og:profile:last_name" content="Iqbal" />
+    <meta property="og:profile:username" content="DrQas" />
+    <meta property="og:profile:gender" content="male" />
+    <meta property="og:description" content="Qasim is a software developer." />
+    <meta property="og:image" content="/assets/img/profile.jpg" />
+    <meta property="og:url" content="http://qas.im" />
+    <meta property="fb:admins" content="1259490451" />
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts/alte.css" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/qasim.css" />
+  </head>
+  <body>
+    <h1><span id="name" tabIndex="1">Qasim</span> Iqbal</h1>
+    <div class="content">
+      <p>
+        Software developer, currently working on <a id="outlook" href="https://github.com/Outlook">Outlook for iOS</a> at <a id="microsoft" href="https://github.com/Microsoft">Microsoft</a>.
+      </p>
+      <p>
+        Want to chat? Reach me with a <a href="https://m.me/q45im" title="My Facebook Messenger URL">message</a> or <a href="mailto:me@qas.im">email</a>.
+      </p>
+      <!-- p>
+        Interested in working together? I am currently employed, but don't hesitate to get in touch.
+      </p -->
+      <p>
+        <a id="twitter" href="https://twitter.com/DrQas">Twitter</a> ∙ <a id="github" href="https://github.com/Qasim">GitHub</a> ∙ <a id="angel" href="https://angel.co/Qasim">AngelList</a>
+      </p>
+    </div>
+  </body>
+</html>
