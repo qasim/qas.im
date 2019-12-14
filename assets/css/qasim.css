@@ -33,7 +33,7 @@ h1 {
 }
 
 #name:hover::after, #name:focus::after {
-  content: ' “kassem”';
+  content: ' “kah-sim”';
   color: #828282;
 }
 
