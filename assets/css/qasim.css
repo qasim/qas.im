@@ -3,7 +3,8 @@
     --background-color: #DECCCB;
     --foreground-color: #383838;
     --focus-color: #F8EEED;
-    --highlight-color: #96746C;
+    --highlight-foreground-color: #F8EEED;
+    --highlight-background-color: #96746C;
   }
 }
 
@@ -12,7 +13,8 @@
     --background-color: #383838;
     --foreground-color: #DECCCB;
     --focus-color: #101010;
-    --highlight-color: #96746C;
+    --highlight-foreground-color: #F8EEED;
+    --highlight-background-color: #96746C;
   }
 }
 
@@ -35,6 +37,10 @@ body {
   padding: 8px;
 }
 
+.english-first-name .first.pronunciation {
+  padding-top: 2px;
+}
+
 .english-last-name .last {
   font-size: 36px;
   padding: 8px;
@@ -47,12 +53,38 @@ body {
 
 .urdu-name .first {
   background-color:  var(--foreground-color);
-  box-shadow: 0 6px 0 var(--background-color) inset;
+  box-shadow: inset 0px 6px 0px var(--background-color), inset 0px 7px 0px var(--foreground-color);
+  clip-path: inset(6px 0px 0px 0px);
   color: var(--background-color);
+  display: block;
   margin-top: -6px;
   padding-bottom: 8px;
   padding-left: 6px;
   padding-right: 6px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  order: 5;
+}
+
+a:link, a:visited {
+  background-color: var(--foreground-color) !important;
+  color: var(--background-color) !important;
+  outline: 1px solid var(--foreground-color);
+  outline-offset: -1px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--highlight-background-color) !important;
+  color: var(--highlight-foreground-color) !important;
+}
+
+a:active {
+  background-color: var(--focus-color) !important;
+  color: var(--foreground-color) !important;
 }
 
 
@@ -102,8 +134,16 @@ body {
     margin-left: 2px;
     text-align: left;
   }
-}
 
+  .links {
+    align-items: flex-end;
+  }
+
+  .links a {
+    margin-top: 8px;
+    padding: 6px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   body {
@@ -150,5 +190,14 @@ body {
 
   .urdu-name .first {
     margin-left: 8px;
+  }
+
+  .links {
+    width: 100%;
+  }
+
+  .links a {
+    margin-top: 16px;
+    padding: 14px;
   }
 }
