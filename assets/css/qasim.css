@@ -19,7 +19,7 @@
 body {
   background-color: var(--background-color);
   color: var(--foreground-color);
-  font-family: 'Bagnard';
+  font-family: 'Bagnard', 'Times New Roman';
   text-align: center;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .urdu-name {
-  font-family: 'Nastaleeq';
+  font-family: 'Nastaleeq', 'Times New Roman';
   font-size: 48px;
 }
 
