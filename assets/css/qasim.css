@@ -72,19 +72,21 @@ body {
 a:link, a:visited {
   background-color: var(--foreground-color) !important;
   color: var(--background-color) !important;
-  outline: 1px solid var(--foreground-color);
-  outline-offset: -1px;
   text-decoration: none;
 }
 
 a:hover {
   background-color: var(--highlight-background-color) !important;
   color: var(--highlight-foreground-color) !important;
+  outline: 1px solid var(--foreground-color);
+  outline-offset: -1px;
 }
 
 a:active {
   background-color: var(--focus-color) !important;
   color: var(--foreground-color) !important;
+  outline: 1px solid var(--foreground-color);
+  outline-offset: -1px;
 }
 
 
@@ -148,6 +150,7 @@ a:active {
 @media only screen and (max-width: 600px) {
   body {
     margin: 16px;
+    margin-bottom: env(safe-area-inset-bottom, 16px);
   }
 
   .container {
