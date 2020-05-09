@@ -97,8 +97,6 @@ a:active {
 
   body {
     height: 100%;
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-    padding-top: env(safe-area-inset-top, 0px);
   }
 
   .wrapper {
@@ -107,8 +105,10 @@ a:active {
     display: flex;
     justify-content: center;
     min-height: 100%;
-    padding-bottom: 8px;
-    padding-top: 8px;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8px);
+    padding-left: calc(env(safe-area-inset-left, 0px) + 8px);
+    padding-right: calc(env(safe-area-inset-right, 0px) + 8px);
+    padding-top: calc(env(safe-area-inset-top, 0px) + 8px);
     width: 100%;
   }
 
@@ -165,10 +165,10 @@ a:active {
 
 @media only screen and (max-width: 600px) {
   body {
-    margin: 16px;
-    margin-bottom: 16px;
-    padding-top: env(safe-area-inset-top, 0px);
-    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
+    padding-left: calc(env(safe-area-inset-left, 0px) + 16px);
+    padding-right: calc(env(safe-area-inset-right, 0px) + 16px);
+    padding-top: calc(env(safe-area-inset-top, 0px) + 16px);
   }
 
   .container {
