@@ -94,6 +94,8 @@ a:active {
   body {
     margin-top: 64px;
     margin-bottom: 64px;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
   }
 
   .container {
@@ -150,7 +152,9 @@ a:active {
 @media only screen and (max-width: 600px) {
   body {
     margin: 16px;
-    margin-bottom: env(safe-area-inset-bottom, 16px);
+    margin-bottom: 16px;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
   }
 
   .container {
