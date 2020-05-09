@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Nastaleeq';
+    src: url('nastaleeq.woff2') format('woff2'),
+        url('nastaleeq.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
