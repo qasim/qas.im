@@ -30,20 +30,14 @@ body {
   outline-offset: -8px;
 }
 
+.english-first-name .first, .english-last-name .last {
+  font-size: 36px;
+  padding: 6px 8px;
+}
+
 .english-first-name .first {
   background-color:  var(--foreground-color);
   color: var(--background-color);
-  font-size: 36px;
-  padding: 8px;
-}
-
-.english-first-name .first.pronunciation {
-  padding-top: 2px;
-}
-
-.english-last-name .last {
-  font-size: 36px;
-  padding: 8px;
 }
 
 .urdu-name {
@@ -53,14 +47,13 @@ body {
 
 .urdu-name .first {
   background-color:  var(--foreground-color);
-  box-shadow: inset 0px 6px 0px var(--background-color), inset 0px 7px 0px var(--foreground-color);
-  clip-path: inset(6px 0px 0px 0px);
   color: var(--background-color);
   display: block;
-  margin-top: -6px;
-  padding-bottom: 8px;
-  padding-left: 6px;
-  padding-right: 6px;
+  line-height: 40px;
+  padding-bottom: 21px;
+  padding-left: 8px;
+  padding-right: 7px;
+  padding-top: 8px;
 }
 
 .links {
@@ -150,6 +143,7 @@ a:active {
 
   .urdu-name .last {
     margin-left: 2px;
+    margin-top: 6px;
     text-align: left;
   }
 
@@ -159,7 +153,7 @@ a:active {
 
   .links a {
     margin-top: 8px;
-    padding: 6px;
+    padding: 5px 6px;
   }
 }
 
@@ -211,6 +205,10 @@ a:active {
 
   .urdu-name .first {
     margin-left: 8px;
+  }
+
+  .urdu-name .last {
+    margin-top: 6px;
   }
 
   .links {
