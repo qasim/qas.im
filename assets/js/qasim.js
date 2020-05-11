@@ -1,14 +1,16 @@
 function togglePronuncation() {
-  var englishNameString = "Qasim"
-  var englishPronunciationString = "/ˈqaːsim/"
-
   var englishFirstName = document.querySelector(".english-first-name .first")
   englishFirstName.classList.toggle("pronunciation")
 
+  var englishLastName = document.querySelector(".english-last-name .last")
+  englishLastName.classList.toggle("pronunciation")
+
   if (englishFirstName.classList.contains("pronunciation")) {
-    englishFirstName.innerHTML = englishPronunciationString
+    englishFirstName.innerHTML = "/ka-sim/"
+    englishLastName.innerHTML = "/ik-bal/"
   } else {
-    englishFirstName.innerHTML = englishNameString
+    englishFirstName.innerHTML = "Qasim"
+    englishLastName.innerHTML = "Iqbal"
   }
 }
 
