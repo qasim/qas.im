@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{ .Title }}</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="description" content="{{ .Description }}">
+    <meta name="keywords" content="Qasim Iqbal, Qasim, Iqbal, drqas, engineer, software, iOS, product, writing" />
+
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:image" content="{{ "images/qasim.png" | absURL }}" />
+    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+
+    <meta property="og:description" content="{{ .Description }}" />
+
+    <meta property="og:profile:first_name" content="Qasim" />
+    <meta property="og:profile:last_name" content="Iqbal" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="{{ .Description }}" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="twitter:site" content="@drqas" />
+    <meta name="twitter:image" content="{{ "images/qasim.png" | absURL }}" />
+    <meta name="twitter:creator" content="@drqas" />
+
+    <link rel="icon" href="{{ "images/favicon.png" | absURL }}" />
+    <link rel="apple-touch-icon" href="{{ "images/qasim.png" | absURL }}" />
+
+    <link rel="stylesheet" type="text/css" href="{{ "styles/fonts/nastaleeq.css" | absURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "styles/fonts/bagnard.css" | absURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "styles/normalize.css" | absURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "styles/qasim.css" | absURL }}" />
+
+    <script type="text/javascript" src="{{ "scripts/qasim.js" | absURL }}"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="english-first-name">
+          <a class="first" href="javascript:togglePronuncation()">Qasim</a>
+        </div>
+        <div class="english-last-name">
+          <div class="last">Iqbal</div>
+        </div>
+        <img class="photo" srcset="{{ "images/qasim.png" | absURL }} 1x,
+                                   {{ "images/qasim@2x.png" | absURL }} 2x,
+                                   {{ "images/qasim@3x.png" | absURL }} 3x" alt="Profile Photo" />
+        <div class="urdu-name">
+          <a class="first" href="javascript:togglePronuncation()">قاسم‎</a>
+          <div class="last">اِقبال</div>
+        </div>
+        <div class="links">
+        {{- range .Site.Data.links }}
+          <a href="{{ .href }}">{{ .text }}</a>
+        {{- end }}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

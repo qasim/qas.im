@@ -1,0 +1,3 @@
+baseURL: https://qas.im/
+disableKinds: [RSS, taxonomy, taxonomyTerm]
+disableHugoGeneratorInject: true
