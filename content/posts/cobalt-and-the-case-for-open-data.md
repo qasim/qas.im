@@ -5,7 +5,7 @@ description: For the past year or so, I’ve been working on a platform for open
 date: 2016-03-14
 sourceName: Medium
 sourceURL: https://medium.com/@DrQas/cobalt-and-the-case-for-open-data-ec042aa5d84d
-tags: []
+keywords: [university of toronto, uoft, open data, data science, school, college, university, api]
 draft: false
 ---
 

@@ -26,7 +26,7 @@
     <meta name="robots" content="index, follow">
 
     <meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
-    <meta name="keywords" content="Qasim Iqbal, Qasim, Iqbal, drqas, engineer, software, iOS, product, writing" />
+    <meta name="keywords" content="{{ delimit (union $.Site.Params.keywords .Keywords) ", " }}" />
 
     <meta property="og:title" content="{{ .Title | default .Site.Title }}" />
     <meta property="og:image" content="{{ "images/qasim.png" | absURL }}" />
