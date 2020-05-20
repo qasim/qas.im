@@ -37,6 +37,7 @@ body {
 }
 
 .photo {
+  background-color: var(--highlight-background-color);
   outline: 8px solid var(--foreground-color);
   outline-offset: -8px;
 }
