@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Bagnard';
-    src: url('bagnard.woff2') format('woff2'), url('bagnard.woff') format('woff');
+    src: url('bagnard.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

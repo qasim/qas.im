@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Alvi Nastaleeq';
-    src: url('nastaleeq.woff2') format('woff2'), url('nastaleeq.woff') format('woff');
+    src: url('nastaleeq.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
