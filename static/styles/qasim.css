@@ -183,7 +183,6 @@ a.external {
   outline: none;
   outline-offset: 0;
   text-decoration: underline;
-  text-underline-position: under;
 }
 
 @media only screen and (min-width: 640px) {
