@@ -1,5 +1,6 @@
 ---
 title: Cobalt and the case for open data
+wrappedTitle: Cobalt and the <span>case for open data</span>
 description: For the past year or so, I’ve been working on a platform for open data APIs centred upon the University of Toronto’s publicly available information.
 date: 2016-03-14
 sourceName: Medium

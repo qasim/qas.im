@@ -14,38 +14,6 @@ function togglePronuncation() {
   }
 }
 
-function fitWidthOfPosts() {
-  var posts = document.querySelectorAll(".posts a.post-link")
-  posts.forEach(function(post) {
-    if (post.getBoundingClientRect().width == 278) {
-      var title = post.querySelector('.title')
-      var titleRect = title.getBoundingClientRect()
-      var titleStartingHeight = titleRect.height
-      while (titleRect.height == titleStartingHeight) {
-        title.style.width = (titleRect.width - 1) + "px"
-        titleRect = title.getBoundingClientRect()
-      }
-      title.style.width = (titleRect.width + 1) + "px"
-    }
-  })
-}
-
-function clearWidthOfPosts() {
-  var posts = document.querySelectorAll(".posts a.post-link")
-  posts.forEach(function(post) {
-    var title = post.querySelector('.title')
-    title.style.width = null
-  })
-}
-
-function setWidthOfPosts(media) {
-  if (media.matches) {
-    fitWidthOfPosts()
-  } else {
-    clearWidthOfPosts()
-  }
-}
-
 function maintainAspectRatioOfPhoto() {
   var photo = document.querySelector(".photo")
   photo.setAttribute("style", "height: " + photo.getBoundingClientRect().width + "px")
@@ -70,12 +38,7 @@ function hyperlinkBack() {
 }
 
 window.onload = function() {
-  var regularMediaQuery = window.matchMedia("(min-width: 640px)")
-  setWidthOfPosts(regularMediaQuery)
-  regularMediaQuery.addListener(setWidthOfPosts)
-
   maintainAspectRatioOfPhoto()
-
   hyperlinkBack()
 }
 

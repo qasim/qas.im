@@ -1,7 +1,7 @@
 <div class="posts">
   {{- range ( where site.RegularPages "Section" "posts" | first 2 ) }}
   <a class="post-link" href="{{ .Permalink }}">
-    <div class="title">{{ .Title }}</div>
+    <div class="title">{{ .Params.wrappedTitle | safeHTML }}</div>
     <div class="date">{{ dateFormat "January 2, 2006" .Date }}</div>
   </a>
   {{ end -}}

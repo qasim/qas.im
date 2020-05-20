@@ -287,6 +287,10 @@ a.external {
     margin-bottom: 6px;
   }
 
+  .posts a .title span {
+    display: block;
+  }
+
   .posts .overflow {
     padding: 13px;
   }
