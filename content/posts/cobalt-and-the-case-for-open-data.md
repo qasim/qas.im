@@ -1,5 +1,6 @@
 ---
 title: Cobalt and the case for open data
+description: For the past year or so, I’ve been working on a platform for open data APIs centred upon the University of Toronto’s publicly available information.
 date: 2016-03-14
 sourceName: Medium
 sourceURL: https://medium.com/@DrQas/cobalt-and-the-case-for-open-data-ec042aa5d84d
