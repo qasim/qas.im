@@ -1,5 +1,7 @@
 title: Qasim Iqbal
 baseURL: https://qas.im/
+params:
+  description: Qasim Iqbal is a software engineer based in Toronto, Canada.
 disableKinds: [sitemap, RSS, taxonomy, taxonomyTerm]
 permalinks:
   posts: "/:filename/"
