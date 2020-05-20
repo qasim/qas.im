@@ -1,0 +1,14 @@
+<div class="archive posts">
+  <a class="back" href="/" title="Go home">
+    {{ partial "arrow.svg" . }}
+  </a>
+  {{ range .Pages.GroupByDate "January 2006" }}
+    <h2>{{ .Key }}</h2>
+    {{ range .Pages }}
+      <a class="post-link" href="{{ .Permalink }}">
+        <div class="title">{{ .Title }}</div>
+        <div class="date">{{ dateFormat "January 2, 2006" .Date }}</div>
+      </a>
+    {{ end }}
+  {{ end }}
+</div>

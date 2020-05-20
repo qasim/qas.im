@@ -1,0 +1,20 @@
+<div class="signature">
+  <div class="english-first-name">
+    <a class="first" href="javascript:togglePronuncation()">Qasim</a>
+  </div>
+  <div class="english-last-name">
+    <div class="last">Iqbal</div>
+  </div>
+  <img class="photo" srcset="{{ "images/qasim.png" | relURL }} 1x,
+                             {{ "images/qasim@2x.png" | relURL }} 2x,
+                             {{ "images/qasim@3x.png" | relURL }} 3x" alt="Profile Photo" />
+  <div class="urdu-name">
+    <a class="first" href="javascript:togglePronuncation()">قاسم‎</a>
+    <div class="last">اِقبال</div>
+  </div>
+  <div class="links">
+  {{- range .Site.Data.links }}
+    <a href="{{ .href }}">{{ .text }}</a>
+  {{- end }}
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167187791-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-167187791-1');
+    </script>
+
+    <title>
+      {{- if .Title -}}
+        {{- delimit (slice .Title "|" .Site.Title) " " -}}
+      {{- else -}}
+        {{- .Site.Title -}}
+      {{ end -}}
+    </title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="description" content="{{ .Description }}">
+    <meta name="keywords" content="Qasim Iqbal, Qasim, Iqbal, drqas, engineer, software, iOS, product, writing" />
+
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:image" content="{{ "images/qasim.png" | absURL }}" />
+    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+
+    <meta property="og:description" content="{{ .Description }}" />
+
+    <meta property="og:profile:first_name" content="Qasim" />
+    <meta property="og:profile:last_name" content="Iqbal" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="{{ .Description }}" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="twitter:site" content="@drqas" />
+    <meta name="twitter:image" content="{{ "images/qasim.png" | absURL }}" />
+    <meta name="twitter:creator" content="@drqas" />
+
+    <link rel="icon" href="{{ "images/favicon.png" | relURL }}" />
+    <link rel="apple-touch-icon" href="{{ "images/qasim.png" | relURL }}" />
+
+    <link rel="stylesheet" type="text/css" href="{{ "styles/fonts/nastaleeq.css" | relURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "styles/fonts/bagnard.css" | relURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "styles/fonts/baskerville.css" | relURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "styles/normalize.css" | relURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "styles/qasim.css" | relURL }}" />
+
+    <script type="text/javascript" src="{{ "scripts/qasim.js" | relURL }}"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </body>
+</html>

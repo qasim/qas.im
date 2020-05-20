@@ -5,17 +5,19 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color: #DECCCB;
+    --background-color: #EEDFDE;
     --foreground-color: #383838;
     --focus-color: #F8EEED;
+    --body-text-color: #101010;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #383838;
-    --foreground-color: #DECCCB;
+    --foreground-color: #EEDFDE;
     --focus-color: #101010;
+    --body-text-color: #F8EEED;
   }
 }
 
@@ -24,6 +26,14 @@ body {
   color: var(--foreground-color);
   font-family: 'Bagnard', 'Times New Roman';
   text-align: center;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
 }
 
 .photo {
@@ -36,20 +46,14 @@ body {
   padding: 6px 8px;
 }
 
-.english-first-name .first {
-  background-color:  var(--foreground-color);
-  color: var(--background-color);
-}
-
 .urdu-name {
   font-family: 'Nastaleeq', 'Times New Roman';
   font-size: 48px;
 }
 
 .urdu-name .first {
-  background-color:  var(--foreground-color);
-  color: var(--background-color);
   display: block;
+  font-size: 48px;
   line-height: 40px;
   padding-bottom: 21px;
   padding-left: 8px;
@@ -64,27 +68,125 @@ body {
 }
 
 a:link, a:visited {
-  background-color: var(--foreground-color) !important;
-  color: var(--background-color) !important;
+  background-color: var(--foreground-color);
+  color: var(--background-color);
+  font-size: 18px;
   text-decoration: none;
 }
 
 a:hover {
-  background-color: var(--highlight-background-color) !important;
-  color: var(--highlight-foreground-color) !important;
+  background-color: var(--highlight-background-color);
+  color: var(--highlight-foreground-color);
   outline: 1px solid var(--foreground-color);
   outline-offset: -1px;
 }
 
 a:active {
-  background-color: var(--focus-color) !important;
-  color: var(--foreground-color) !important;
+  background-color: var(--focus-color);
+  color: var(--body-text-color);
   outline: 1px solid var(--foreground-color);
   outline-offset: -1px;
 }
 
+a:link path, a:visited path {
+  fill: var(--background-color);
+}
 
-@media only screen and (min-width: 601px) {
+a:hover path {
+  fill: var(--highlight-foreground-color);
+}
+
+a:active path {
+  fill: var(--body-text-color);
+}
+
+h1 {
+  font-size: 36px;
+  color: var(--body-text-color);
+}
+
+h2 {
+  font-size: 24px;
+  color: var(--body-text-color);
+}
+
+.posts {
+  display: flex;
+}
+
+.posts a .date {
+  font-size: 12px;
+}
+
+.posts.archive {
+  flex-direction: column;
+  order: 0;
+}
+
+.archive h2 {
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+}
+
+a.back {
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 0;
+}
+
+a.external {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 5px 6px 3px 6px;
+  margin-left: 8px;
+}
+
+.post {
+  margin-bottom: 16px;
+  max-width: 680px;
+  text-align: left;
+}
+
+.post h1 {
+  margin: 0;
+  margin-top: 32px;
+}
+
+.post .date {
+  margin-top: 6px;
+  margin-bottom: 18px;
+  color: var(--body-text-color);
+  font-size: 18px;
+}
+
+.post .body h2 {
+  margin-top: 36px;
+}
+
+.post .body {
+  font-family: 'Baskerville', 'Times New Roman';
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--body-text-color);
+}
+
+.post .body a:link, .post .body a:visited {
+  background: none;
+  color: var(--body-text-color);
+  font-size: 16px;
+  outline: none;
+  outline-offset: 0;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+@media only screen and (min-width: 640px) {
   html {
     height: 100%;
   }
@@ -95,25 +197,22 @@ a:active {
 
   .wrapper {
     align-items: center;
-    box-sizing: border-box;
-    display: flex;
     justify-content: center;
-    min-height: 100%;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8px);
-    padding-left: calc(env(safe-area-inset-left, 0px) + 8px);
-    padding-right: calc(env(safe-area-inset-right, 0px) + 8px);
-    padding-top: calc(env(safe-area-inset-top, 0px) + 8px);
-    width: 100%;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 32px);
+    padding-left: calc(env(safe-area-inset-left, 0px) + 32px);
+    padding-right: calc(env(safe-area-inset-right, 0px) + 32px);
+    padding-top: calc(env(safe-area-inset-top, 0px) + 32px);
   }
 
-  .container {
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
+  .signature {
+    display: grid;
+    grid-template-columns: 181px 278px 181px;
   }
 
   .english-first-name {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     order: 1;
   }
 
@@ -142,8 +241,15 @@ a:active {
   }
 
   .urdu-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-left: 8px;
     order: 3;
+  }
+
+  .urdu-name .first {
+    align-self: flex-start;
   }
 
   .urdu-name .last {
@@ -158,11 +264,53 @@ a:active {
 
   .links a {
     margin-top: 8px;
-    padding: 5px 6px;
+    padding: 6px 6px 4px 6px;
+  }
+
+  .posts {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    order: 0;
+    width: 278px;
+  }
+
+  .posts a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .posts a .title {
+    text-align: left;
+    margin-bottom: 6px;
+  }
+
+  .posts .overflow {
+    padding: 13px;
+  }
+
+  a.back {
+    width: 30px;
+    min-height: 30px;
+  }
+
+  .post {
+    min-width: 278px;
+  }
+
+  .archive {
+    margin-bottom: 24px;
+  }
+
+  .archive h2 {
+    margin-top: 24px;
+    margin-bottom: 6px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 639px) {
   body {
     padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
     padding-left: calc(env(safe-area-inset-left, 0px) + 16px);
@@ -170,7 +318,7 @@ a:active {
     padding-top: calc(env(safe-area-inset-top, 0px) + 16px);
   }
 
-  .container {
+  .signature {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -223,5 +371,56 @@ a:active {
   .links a {
     margin-top: 16px;
     padding: 14px;
+  }
+
+  .posts {
+    flex-direction: column;
+    order: 1;
+  }
+
+  .posts a:link, .posts a:visited {
+    margin-top: 16px;
+    padding: 13px;
+  }
+
+  .posts a .title {
+    margin-bottom: 8px;
+  }
+
+  .overflow {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    line-height: 0;
+    height: 44px;
+  }
+
+  a.back {
+    padding-bottom: 14px;
+    padding-top: 14px;
+    width: 44px;
+    min-height: 44px;
+    margin-top: 0 !important;
+  }
+
+  a.external {
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-left: 16px;
+  }
+
+  .post .date {
+    margin-top: 16px;
+  }
+
+  .archive {
+    margin-bottom: 32px;
+  }
+
+  .archive h2 {
+    text-align: left;
+    margin-top: 32px;
+    margin-bottom: -8px;
   }
 }

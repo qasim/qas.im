@@ -1,0 +1,17 @@
+<div class="post">
+  <div class="navigation">
+    <a class="back" href="/" title="Go home">
+      {{ partial "arrow.svg" . }}
+    </a>
+    {{ if .Params.sourceName }}
+    <a class="external" href="{{ .Params.sourceURL }}">
+      Open in {{ .Params.sourceName }}
+    </a>
+    {{ end }}
+  </div>
+  <h1>{{ .Title }}</h1>
+  <div class="date">{{ dateFormat "January 2, 2006" .Date }}</div>
+  <div class="body">
+    {{ .Content }}
+  </div>
+</div>
