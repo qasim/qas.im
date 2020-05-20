@@ -1,6 +1,6 @@
 title: Qasim Iqbal
 baseURL: https://qas.im/
-disableKinds: [RSS, taxonomy, taxonomyTerm]
+disableKinds: [sitemap, RSS, taxonomy, taxonomyTerm]
 permalinks:
   posts: "/:filename/"
 disableHugoGeneratorInject: true
