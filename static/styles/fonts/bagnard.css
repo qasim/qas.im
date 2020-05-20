@@ -3,4 +3,5 @@
     src: url('bagnard.woff2') format('woff2'), url('bagnard.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
