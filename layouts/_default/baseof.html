@@ -10,13 +10,7 @@
       gtag('config', 'UA-167187791-1');
     </script>
 
-    <title>
-      {{- if .Title -}}
-        {{- delimit (slice .Title "|" .Site.Title) " " -}}
-      {{- else -}}
-        {{- .Site.Title -}}
-      {{ end -}}
-    </title>
+    <title>{{ .Title | default .Site.Title }}</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
