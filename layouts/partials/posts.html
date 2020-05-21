@@ -5,7 +5,7 @@
     <div class="date">{{ dateFormat "January 2, 2006" .Date }}</div>
   </a>
   {{ end -}}
-  <a class="overflow" href="{{ "archive" | relURL }}" title="View archive">
+  <a class="overflow" href="{{ "/archive/" | relURL }}" title="View archive">
     {{ partial "overflow.svg" . }}
   </a>
 </div>
