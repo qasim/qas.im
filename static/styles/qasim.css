@@ -187,6 +187,10 @@ a.external {
   text-decoration: underline;
 }
 
+.post .note {
+  margin-top: 28px;
+}
+
 @media only screen and (min-width: 640px) {
   html {
     height: 100%;
@@ -432,5 +436,9 @@ a.external {
     text-align: left;
     margin-top: 32px;
     margin-bottom: -8px;
+  }
+
+  .post .note {
+    text-align: center;
   }
 }
