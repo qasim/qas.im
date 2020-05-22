@@ -2,23 +2,13 @@
   <a class="back" href="/" title="Go home">
     {{ partial "arrow.svg" . }}
   </a>
-  {{ if eq (len .Pages) 0 }}
-    <div class="post">
-      <div class="body">
-        <div class="note">
-          "There's nothing here," you think to yourself.
-        </div>
-      </div>
-    </div>
-  {{ else }}
-    {{ range .Pages.GroupByDate "January 2006" }}
-      <h2>{{ .Key }}</h2>
-      {{ range .Pages }}
-        <a class="post-link" href="{{ .Permalink | relURL }}">
-          <div class="title">{{ .Params.wrappedTitle | safeHTML }}</div>
-          <div class="date">{{ dateFormat "January 2, 2006" .Date }}</div>
-        </a>
-      {{ end }}
+  {{ range .Pages.GroupByDate "January 2006" }}
+    <h2>{{ .Key }}</h2>
+    {{ range .Pages }}
+      <a class="post-link" href="{{ .Permalink | relURL }}">
+        <div class="title">{{ .Params.wrappedTitle | safeHTML }}</div>
+        <div class="date">{{ dateFormat "January 2, 2006" .Date }}</div>
+      </a>
     {{ end }}
   {{ end }}
 </div>

@@ -1,4 +1,8 @@
 {{ define "main" }}
-{{ partial "archive.html" . }}
+{{ if eq (len .Pages) 0 }}
+  {{ partial "nothing.html" . }}
+{{ else }}
+  {{ partial "archive.html" . }}
+{{ end }}
 {{ partial "signature.html" . }}
 {{ end }}
