@@ -1,11 +1,11 @@
-<div class="posts">
+<div class="joint posts">
   {{- range ( where site.RegularPages "Section" "posts" | first 2 ) }}
-  <a class="post-link" href="{{ .Permalink | relURL }}">
-    <div class="title">{{ .Params.wrappedTitle | safeHTML }}</div>
+  <a class="cell" href="{{ .Permalink | relURL }}">
+    <h3>{{ .Params.wrappedTitle | safeHTML }}</h3>
     <div class="date">{{ dateFormat "January 2, 2006" .Date }}</div>
   </a>
   {{ end -}}
-  <a class="overflow" href="{{ "/archive/" | relURL }}" title="View archive">
+  <a class="button overflow" href="{{ "/archive/" | relURL }}" title="View archive">
     {{ partial "overflow.svg" . }}
   </a>
 </div>

@@ -1,12 +1,12 @@
-<div class="archive posts">
-  <a class="back" href="/" title="Go home">
+<div class="disjoint posts">
+  <a class="button back" href="/" title="Go home">
     {{ partial "arrow.svg" . }}
   </a>
   {{ range .Pages.GroupByDate "January 2006" }}
     <h2>{{ .Key }}</h2>
     {{ range .Pages }}
-      <a class="post-link" href="{{ .Permalink | relURL }}">
-        <div class="title">{{ .Params.wrappedTitle | safeHTML }}</div>
+      <a class="cell" href="{{ .Permalink | relURL }}">
+        <h3>{{ .Params.wrappedTitle | safeHTML }}</h3>
         <div class="date">{{ dateFormat "January 2, 2006" .Date }}</div>
       </a>
     {{ end }}
