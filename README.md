@@ -9,7 +9,7 @@ My personal website and archive.
 ## Develop
 
 ```bash
-$ hugo serve
+$ hugo server
 ```
 
 ## Generate
