@@ -163,6 +163,7 @@ a.external {
   margin-bottom: 16px;
   max-width: 680px;
   text-align: left;
+  border-bottom: 1px solid var(--body-text-color);
 }
 
 .post h1 {
@@ -289,25 +290,9 @@ a.external {
     order: 0;
   }
 
-  .joint > * {
-    margin-top: 8px;
-  }
-
-  .joint > :last-child {
-    margin-top: 0;
-  }
-
   .disjoint {
     margin-bottom: 32px;
     order: 0;
-  }
-
-  .disjoint > * {
-    margin-top: 32px;
-  }
-
-  .disjoint > :last-child {
-    margin-top: 0;
   }
 
   .posts {
@@ -325,6 +310,26 @@ a.external {
     flex-direction: column;
     text-align: left;
     padding: 8px;
+  }
+
+  .joint.posts a {
+    margin-top: 8px;
+  }
+
+  .joint.posts a:last-of-type {
+    margin-top: 0;
+  }
+
+  .disjoint.posts a {
+    margin-top: 8px;
+  }
+
+  .disjoint.posts a:first-of-type {
+    margin-top: 0;
+  }
+
+  .posts h2 {
+    margin-top: 32px;
   }
 
   .posts a h3 {
@@ -348,6 +353,8 @@ a.external {
 
   .post {
     min-width: 278px;
+    padding-bottom: 32px;
+    margin-bottom: 78px;
   }
 
   .archive {
@@ -438,29 +445,33 @@ a.external {
     order: 1;
   }
 
-  .joint > * {
-    margin-top: 16px;
-  }
-
-  .joint > :first-child {
-    margin-top: 0;
-  }
-
   .disjoint {
     margin-bottom: 32px;
     order: 0;
   }
 
-  .disjoint > * {
-    margin-top: 32px;
+  .posts a:link, .posts a:visited {
+    padding: 12px;
   }
 
-  .disjoint > :last-child {
+  .joint.posts a {
+    margin-top: 16px;
+  }
+
+  .joint.posts a:first-of-type {
     margin-top: 0;
   }
 
-  .posts a:link, .posts a:visited {
-    padding: 12px;
+  .disjoint.posts a {
+    margin-top: 16px;
+  }
+
+  .disjoint.posts a:first-of-type {
+    margin-top: 0;
+  }
+
+  .posts h2 {
+    margin-top: 32px;
   }
 
   .posts a h3 {
@@ -491,6 +502,11 @@ a.external {
     min-height: 44px;
     margin-left: 16px;
     text-align: center;
+  }
+
+  .post {
+    padding-bottom: 38px;
+    margin-bottom: 50px;
   }
 
   .post .date {
