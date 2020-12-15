@@ -163,7 +163,6 @@ a.external {
   margin-bottom: 16px;
   max-width: 680px;
   text-align: left;
-  border-bottom: 1px solid var(--body-text-color);
 }
 
 .post h1 {
@@ -202,6 +201,14 @@ a.external {
   outline: none;
   outline-offset: 0;
   text-decoration: underline;
+}
+
+.content p:not(:first-child) {
+  text-indent: 36px;
+}
+
+.post .fin {
+  text-align: center;
 }
 
 @media only screen and (min-width: 640px) {
@@ -353,8 +360,7 @@ a.external {
 
   .post {
     min-width: 278px;
-    padding-bottom: 38px;
-    margin-bottom: 78px;
+    margin-bottom: 36px;
   }
 
   .archive {
@@ -369,6 +375,11 @@ a.external {
   .nothing {
     text-align: left;
     width: 278px;
+  }
+
+  .post .fin {
+    margin-top: 32px;
+    margin-bottom: 8px;
   }
 }
 
@@ -521,5 +532,9 @@ a.external {
     text-align: left;
     margin-top: 32px;
     margin-bottom: -8px;
+  }
+
+  .post .fin {
+    margin-top: 64px;
   }
 }
