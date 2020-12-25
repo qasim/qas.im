@@ -44,7 +44,11 @@ body {
 
 .english-first-name .first, .english-last-name .last {
   font-size: 36px;
-  padding: 6px 8px;
+  padding: 6px 7px;
+}
+
+.english-first-name .first, .english-last-name .last {
+  padding-bottom: 2px;
 }
 
 .urdu-name {
@@ -122,11 +126,11 @@ h3 {
 }
 
 .posts h2 {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .posts a .date {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .posts.archive {
@@ -289,7 +293,7 @@ a.external {
 
   .links a {
     margin-top: 8px;
-    padding: 6px 6px 4px 6px;
+    padding: 7px 7px 3px 7px;
   }
 
   .joint {
@@ -316,7 +320,7 @@ a.external {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 8px;
+    padding: 10px 10px 8px 10px;
   }
 
   .joint.posts a {
@@ -342,7 +346,7 @@ a.external {
   .posts a h3 {
     display: block;
     text-align: left;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 
   .posts a h3 span {
@@ -408,6 +412,7 @@ a.external {
   .english-last-name {
     order: 4;
     display: inline-block;
+    margin-left: 4px;
   }
 
   .english-last-name, .english-last-name .last {
@@ -448,7 +453,7 @@ a.external {
     justify-content: center;
     margin-top: 16px;
     min-height: 44px;
-    padding: 12px;
+    padding: 12px 12px 9px 12px;
   }
 
   .joint {
@@ -462,7 +467,7 @@ a.external {
   }
 
   .posts a:link, .posts a:visited {
-    padding: 12px;
+    padding: 12px 12px 9px 12px;
   }
 
   .joint.posts a {
@@ -496,6 +501,7 @@ a.external {
     justify-content: center;
     line-height: 0;
     min-height: 44px;
+    padding: 12px !important;
   }
 
   .button.back {
