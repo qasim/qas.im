@@ -1,20 +1,22 @@
 <div class="signature">
   <div class="english-first-name">
-    <a class="first" href="javascript:togglePronuncation()">Qasim</a>
+    <a class="first pronunciation-trigger" href="/me/">Qasim</a>
   </div>
   <div class="english-last-name">
     <div class="last">Iqbal</div>
   </div>
-  <img class="photo" srcset="{{ "images/qasim.png" | relURL }} 1x,
-                             {{ "images/qasim@2x.png" | relURL }} 2x,
-                             {{ "images/qasim@3x.png" | relURL }} 3x" alt="Profile Photo" />
+  <a class="photo-link" href="/" title="Go home">
+    <img class="photo" srcset="{{ "images/qasim.png" | relURL }} 1x,
+                               {{ "images/qasim@2x.png" | relURL }} 2x,
+                               {{ "images/qasim@3x.png" | relURL }} 3x" alt="Photo of Qasim" />
+  </a>
   <div class="urdu-name">
-    <a class="first" href="javascript:togglePronuncation()">قاسم‎</a>
+    <a class="first pronunciation-trigger" href="/me/">قاسم‎</a>
     <div class="last">اِقبال</div>
   </div>
   <div class="links">
   {{- range .Site.Data.links }}
-    <a href="{{ .href }}">{{ .text }}</a>
+    <a{{ if .class }} class="{{ .class }}"{{ end }} href="{{ .href }}">{{ .text }}</a>
   {{- end }}
   </div>
 </div>

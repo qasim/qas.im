@@ -25,6 +25,7 @@ body {
   background-color: var(--background-color);
   color: var(--foreground-color);
   font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -36,10 +37,15 @@ body {
   width: 100%;
 }
 
-.photo {
+.photo-link {
+  display: block;
   background-color: var(--highlight-background-color);
   outline: 8px solid var(--foreground-color);
   outline-offset: -8px;
+}
+
+.photo {
+  box-sizing: border-box;
 }
 
 .english-first-name .first, .english-last-name .last {
@@ -103,6 +109,16 @@ a:hover path {
 
 a:active path {
   fill: var(--body-text-color);
+}
+
+.photo:hover {
+  outline: 8px solid var(--foreground-color);
+  outline-offset: -8px;
+}
+
+.photo:active {
+  outline: 8px solid var(--focus-color);
+  outline-offset: -8px;
 }
 
 h1 {
@@ -170,15 +186,18 @@ a.external {
 }
 
 .post h1 {
+  color: var(--body-text-color);
   margin: 0;
   margin-top: 32px;
+  font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
 }
 
 .post .date {
   margin-top: 6px;
   margin-bottom: 18px;
   color: var(--body-text-color);
-  font-size: 18px;
+  font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+  font-size: 16px;
 }
 
 .content p:last-child {
@@ -186,33 +205,43 @@ a.external {
   margin-bottom: 0;
 }
 
+.content h1:not(:first-child) {
+  padding-top: 24px;
+}
+
 .content h2 {
-  margin-top: 36px;
+  margin-top: 56px;
+  font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+}
+
+.content p:first-child {
+  padding-top: 2px;
 }
 
 .content {
   font-family: 'Libre Baskerville', Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
   color: var(--body-text-color);
-  margin-top: 32px !important;
+  margin-top: 22px !important;
 }
 
 .content a:link, .content a:visited {
   background: none;
   color: var(--body-text-color);
-  font-size: 16px;
+  font-size: 18px;
   outline: none;
   outline-offset: 0;
   text-decoration: underline;
 }
 
-.content p:not(:first-child) {
-  text-indent: 36px;
-}
-
 .post .fin {
   text-align: center;
+  color: var(--body-text-color);
+}
+
+.post .header-holder {
+  line-height: 24px;
 }
 
 @media only screen and (min-width: 640px) {
@@ -263,7 +292,7 @@ a.external {
     text-align: right;
   }
 
-  .photo {
+  .photo-link {
     height: 278px;
     order: 2;
     width: 278px;
@@ -341,6 +370,7 @@ a.external {
 
   .posts h2 {
     margin-top: 32px;
+    color: var(--body-text-color);
   }
 
   .posts a h3 {
@@ -360,6 +390,7 @@ a.external {
   a.back {
     width: 30px;
     min-height: 30px;
+    padding: 0;
   }
 
   .post {
@@ -382,8 +413,8 @@ a.external {
   }
 
   .post .fin {
-    margin-top: 32px;
-    margin-bottom: 8px;
+    margin-top: 18px;
+    margin-bottom: -14px;
   }
 }
 
@@ -419,7 +450,7 @@ a.external {
     display: inline-block;
   }
 
-  .photo {
+  .photo-link {
     margin-bottom: 16px;
     margin-top: 16px;
     order: 2;
@@ -522,12 +553,8 @@ a.external {
   }
 
   .post {
-    padding-bottom: 38px;
-    margin-bottom: 50px;
-  }
-
-  .post .date {
-    margin-top: 16px;
+    padding-bottom: 22px;
+    margin-bottom: 0px;
   }
 
   .archive {
@@ -541,6 +568,6 @@ a.external {
   }
 
   .post .fin {
-    margin-top: 64px;
+    margin-top: 20px;
   }
 }
