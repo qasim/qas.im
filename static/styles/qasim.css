@@ -24,7 +24,7 @@
 body {
   background-color: var(--background-color);
   color: var(--foreground-color);
-  font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+  font-family: 'Libre Baskerville', Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
   font-size: 18px;
   text-align: center;
 }
@@ -49,6 +49,7 @@ body {
 }
 
 .english-first-name .first, .english-last-name .last {
+  font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
   font-size: 36px;
   padding: 6px 7px;
 }
@@ -57,7 +58,7 @@ body {
   padding-bottom: 2px;
 }
 
-.urdu-name {
+.urdu-name .first, .urdu-name .last {
   font-family: 'Alvi Nastaleeq', serif;
   font-size: 48px;
 }
@@ -81,6 +82,7 @@ body {
 a:link, a:visited {
   background-color: var(--foreground-color);
   color: var(--background-color);
+  font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
   font-size: 18px;
   text-decoration: none;
 }
@@ -122,16 +124,19 @@ a:active path {
 }
 
 h1 {
+  font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
   font-size: 32px;
   margin: 0;
 }
 
 h2 {
+  font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
   font-size: 24px;
   margin: 0;
 }
 
 h3 {
+  font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
   font-size: 18px;
   margin: 0;
 }
@@ -189,7 +194,6 @@ a.external {
   color: var(--body-text-color);
   margin: 0;
   margin-top: 32px;
-  font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
 }
 
 .post .date {
@@ -211,7 +215,6 @@ a.external {
 
 .content h2 {
   margin-top: 56px;
-  font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
 }
 
 .content p:first-child {
@@ -219,7 +222,6 @@ a.external {
 }
 
 .content {
-  font-family: 'Libre Baskerville', Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
   font-size: 18px;
   line-height: 32px;
   color: var(--body-text-color);
@@ -229,6 +231,7 @@ a.external {
 .content a:link, .content a:visited {
   background: none;
   color: var(--body-text-color);
+  font-family: 'Libre Baskerville', Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
   font-size: 18px;
   outline: none;
   outline-offset: 0;
@@ -236,6 +239,7 @@ a.external {
 }
 
 .post .fin {
+  font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
   text-align: center;
   color: var(--body-text-color);
 }
