@@ -1,5 +1,5 @@
 ---
-title: Archive
-description: An archive of posts by Qasim Iqbal.
+title: Archive － Qasim Iqbal
+description: An archive of Qasim's posts.
 url: archive
 ---

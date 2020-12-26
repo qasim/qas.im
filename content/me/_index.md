@@ -1,5 +1,5 @@
 ---
-title: Me, Qasim Iqbal
-description: Who is Qasim Iqbal?
+title: Me － Qasim Iqbal
+description: Details about Qasim.
 url: me
 ---
