@@ -15,7 +15,7 @@ function hyperlinkBack() {
   var currentURL = new URL(document.location)
   var referringURL = new URL(document.referrer)
 
-  if (referringURL.host != currentURL.host) {
+  if (referringURL.host != currentURL.host || referringURL.pathname == "/") {
     back.href = "/"
     back.setAttribute("title", "Go home")
   } else {
