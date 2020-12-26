@@ -1,14 +1,15 @@
+- text: Me
+  href: /me/
+  class: pronunciation-trigger
+
 - text: Email
   href: mailto:me@qas.im
 
-- text: Messenger
-  href: https://m.me/q45im
-
 - text: Twitter
-  href: https://twitter.com/drqas
-
-- text: Instagram
-  href: https://instagram.com/drqas
+  href: https://twitter.com/DrQas/
 
 - text: GitHub
-  href: https://github.com/qasim
+  href: https://github.com/qasim/
+
+- text: LinkedIn
+  href: https://www.linkedin.com/in/drqas/
