@@ -210,11 +210,11 @@ a.external {
 }
 
 .content h1:not(:first-child) {
-  padding-top: 24px;
+  padding-top: 22px;
 }
 
 .content h2 {
-  margin-top: 56px;
+  margin-top: 54px;
 }
 
 .content p:first-child {
@@ -223,7 +223,7 @@ a.external {
 
 .content {
   font-size: 18px;
-  line-height: 32px;
+  line-height: 36px;
   color: var(--body-text-color);
   margin-top: 22px !important;
 }
