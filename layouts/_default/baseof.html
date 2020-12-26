@@ -46,6 +46,10 @@
     <meta name="twitter:image" content="{{ "images/qasim.png" | absURL }}" />
     <meta name="twitter:creator" content="@drqas" />
 
+    {{ if .Params.sourceURL -}}
+    <link rel="canonical" href="{{ .Params.sourceURL }}" />
+    {{- end }}
+
     <link rel="icon" href="{{ "images/favicon.png" | relURL }}" />
     <link rel="apple-touch-icon" href="{{ "images/qasim.png" | relURL }}" />
 

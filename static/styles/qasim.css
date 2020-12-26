@@ -125,7 +125,7 @@ a:active path {
 
 h1 {
   font-family: 'Bagnard', Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
-  font-size: 32px;
+  font-size: 36px;
   margin: 0;
 }
 
@@ -205,7 +205,6 @@ a.external {
 }
 
 .content p:last-child {
-  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -236,6 +235,8 @@ a.external {
   outline: none;
   outline-offset: 0;
   text-decoration: underline;
+  text-decoration-color: var(--body-text-color);
+  text-decoration-thickness: 1px;
 }
 
 .post .fin {
