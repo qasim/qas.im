@@ -41,16 +41,21 @@ function showPronunciation(shouldShow) {
   }
 }
 
+function togglePronunciation() {
+  var englishFirstName = document.querySelector(".english-first-name .first")
+  showPronunciation(!englishFirstName.classList.contains("pronunciation"))
+}
+
 window.onload = function() {
   maintainAspectRatioOfPhoto()
   hyperlinkBack()
 
-  var firstNames = document.querySelectorAll('.pronunciation-trigger')
-  for (var firstName of firstNames) {
-    firstName.onmouseover = function() {
+  var pronunciationHoverTriggers = document.querySelectorAll('.pronunciation-hover-trigger')
+  for (var trigger of pronunciationHoverTriggers) {
+    trigger.onmouseover = function() {
       showPronunciation(true)
     }
-    firstName.onmouseout = function() {
+    trigger.onmouseout = function() {
       showPronunciation(false)
     }
   }

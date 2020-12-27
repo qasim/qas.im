@@ -1,6 +1,6 @@
 - text: Me
   href: /me/
-  class: pronunciation-trigger
+  class: pronunciation-hover-trigger
 
 - text: Email
   href: mailto:me@qas.im
