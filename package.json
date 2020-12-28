@@ -1,0 +1,17 @@
+{
+  "name": "qas.im",
+  "author": "Qasim Iqbal",
+  "description": "My personal website and archive.",
+  "version": "1.0.0",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qasim/qas.im.git"
+  },
+  "scripts": {
+    "build": "hugo -D --gc && prettier --write public"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
