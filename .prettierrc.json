@@ -1,5 +1,6 @@
 {
-  "htmlWhitespaceSensitivity": "ignore",
+  "htmlWhitespaceSensitivity": "css",
+  "printWidth": 2147483647,
   "semi": false,
   "trailingComma": "none"
 }
