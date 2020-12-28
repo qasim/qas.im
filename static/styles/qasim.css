@@ -462,7 +462,7 @@ a.external {
 
 @media only screen and (max-width: 680px) {
   body {
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
+    padding-bottom: calc(2 * env(safe-area-inset-bottom, 0px) + 16px);
     padding-left: calc(env(safe-area-inset-left, 0px) + 16px);
     padding-right: calc(env(safe-area-inset-right, 0px) + 16px);
     padding-top: calc(env(safe-area-inset-top, 0px) + 16px);
