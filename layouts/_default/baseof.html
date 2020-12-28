@@ -23,7 +23,7 @@
     <meta name="keywords" content="{{ delimit (union $.Site.Params.keywords .Keywords) ", " }}" />
 
     <meta property="og:title" content="{{ .Title | default .Site.Title }}" />
-    <meta property="og:image" content="{{ "images/qasim.png" | absURL }}" />
+    <meta property="og:image" content="{{ if .Params.imageURL }}{{ .Params.imageURL | absURL }}{{ else }}{{ "images/qasim.png" | absURL }}{{ end }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:description" content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
 
@@ -43,7 +43,7 @@
     <meta name="twitter:description" content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
     <meta name="twitter:title" content="{{ .Title | default .Site.Title }}" />
     <meta name="twitter:site" content="@drqas" />
-    <meta name="twitter:image" content="{{ "images/qasim.png" | absURL }}" />
+    <meta name="twitter:image" content="{{ if .Params.imageURL }}{{ .Params.imageURL | absURL }}{{ else }}{{ "images/qasim.png" | absURL }}{{ end }}" />
     <meta name="twitter:creator" content="@drqas" />
 
     {{ if .Params.sourceURL -}}
@@ -51,7 +51,7 @@
     {{- end }}
 
     <link rel="icon" href="{{ "images/favicon.png" | relURL }}" />
-    <link rel="apple-touch-icon" href="{{ "images/qasim.png" | relURL }}" />
+    <link rel="apple-touch-icon" href="{{ if .Params.imageURL }}{{ .Params.imageURL | relURL }}{{ else }}{{ "images/qasim.png" | relURL }}{{ end }}" />
 
     <link rel="stylesheet" type="text/css" href="{{ "styles/fonts/nastaleeq.css" | relURL }}" />
     <link rel="stylesheet" type="text/css" href="{{ "styles/fonts/bagnard.css" | relURL }}" />
