@@ -1,0 +1,27 @@
+<div class="disjoint post">
+  <div class="navigation">
+    <a class="button back" href="/" title="Go home">
+      {{ partial "arrow.svg" . }}
+    </a>
+    {{ if .Params.sourceName }}
+    <a class="button external" href="{{ .Params.sourceURL }}">
+      {{ .Params.sourceName }}
+    </a>
+    {{ end }}
+  </div>
+  <h1>{{ .Title }}</h1>
+  <div class="date">{{ dateFormat "January 2, 2006" .Params.startDate }} － {{ dateFormat "January 2, 2006" .Params.endDate }}</div>
+  <div class="content">
+    {{ .Content }}
+  </div>
+  <div class="album">
+    {{ range sort .Pages "Date" "asc" }}
+      <a class="photo-cell" href="{{ .Permalink | relURL }}">
+        <div class="preview" style="background-image: url('{{ .Params.imageURL }}')" title="{{ .Description }}"></div>
+        <h3>{{ .Title }}</h3>
+        <div class="photo-date">{{ dateFormat "January 2, 2006" .Date }}</div>
+      </a>
+    {{ end }}
+  </div>
+  {{ partial "fin.html" }}
+</div>

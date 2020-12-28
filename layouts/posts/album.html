@@ -1,0 +1,8 @@
+{{ define "main" }}
+  {{ if eq (len .Pages) 0 }}
+    {{ partial "nothing.html" . }}
+  {{ else }}
+    {{ partial "album.html" . }}
+  {{ end }}
+  {{ partial "signature.html" . }}
+{{ end }}

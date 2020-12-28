@@ -6,6 +6,7 @@ date: 2020-12-14
 keywords: [father, time, family, healing]
 draft: false
 ---
+
 Father arrived home after his surgery this weekend. I took him for a walk around the block to help him get back to moving around again.
 
 "In Leeds, when you were 2 years old, I had just arrived home after my first surgery," he explained, imitating a penguin’s waddle, "I was barely able to move."

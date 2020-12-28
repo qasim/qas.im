@@ -5,7 +5,7 @@ params:
   keywords: [Qasim Iqbal, Qasim, Iqbal, drqas, engineer, software, product, writing]
 disableKinds: [sitemap, RSS, taxonomy, taxonomyTerm]
 permalinks:
-  posts: "/:filename/"
+  posts: "/:slug/"
 disableHugoGeneratorInject: true
 markup:
   goldmark:

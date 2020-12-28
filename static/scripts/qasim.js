@@ -1,9 +1,16 @@
-function maintainAspectRatioOfPhoto() {
+function maintainAspectRatioOfProfilePhoto() {
   var photoLink = document.querySelector(".photo-link")
   photoLink.setAttribute("style", "height: " + photoLink.getBoundingClientRect().width + "px")
 
   var photo = document.querySelector(".photo")
   photo.setAttribute("style", photoLink.getAttribute("style"))
+}
+
+function maintainAspectRatioOfAlbumPhotos() {
+  var photos = document.querySelectorAll(".album .photo-cell .preview")
+  for (var photo of photos) {
+    photo.style.height = photo.getBoundingClientRect().width + "px"
+  }
 }
 
 function hyperlinkBack() {
@@ -47,8 +54,10 @@ function togglePronunciation() {
 }
 
 window.onload = function() {
-  maintainAspectRatioOfPhoto()
   hyperlinkBack()
+
+  maintainAspectRatioOfProfilePhoto()
+  maintainAspectRatioOfAlbumPhotos()
 
   var pronunciationHoverTriggers = document.querySelectorAll('.pronunciation-hover-trigger')
   for (var trigger of pronunciationHoverTriggers) {
@@ -62,5 +71,6 @@ window.onload = function() {
 }
 
 window.onresize = function() {
-  maintainAspectRatioOfPhoto()
+  maintainAspectRatioOfProfilePhoto()
+  maintainAspectRatioOfAlbumPhotos()
 }

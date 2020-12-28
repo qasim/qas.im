@@ -249,6 +249,43 @@ a.external {
   line-height: 20px;
 }
 
+.album {
+  display: grid;
+  grid-template-columns: 221px 221px 221px;
+  column-gap: 8px;
+  row-gap: 8px;
+  margin-top: 32px;
+  padding-bottom: 8px;
+}
+
+.album .photo-cell {
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.album .photo-cell h3 {
+  margin-bottom: 4px;
+}
+
+.album .photo-cell .photo-date {
+  font-size: 14px;
+}
+
+.album .photo-cell .preview {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 205px;
+  margin-bottom: 8px;
+}
+
+.album-photo {
+  width: 100%;
+  padding-top: 12px;
+  margin-bottom: -3px;
+}
+
 @media only screen and (min-width: 640px) {
   html {
     height: 100%;
@@ -423,7 +460,7 @@ a.external {
   }
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 680px) {
   body {
     padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
     padding-left: calc(env(safe-area-inset-left, 0px) + 16px);
@@ -574,5 +611,21 @@ a.external {
 
   .post .fin {
     margin-top: 20px;
+  }
+
+  .album {
+    grid-template-columns: auto;
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  .album .photo-cell {
+    padding: 16px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .album .photo-cell .preview {
+    margin-bottom: 16px;
   }
 }
