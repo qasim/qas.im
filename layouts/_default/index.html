@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ if gt (len (where .Site.RegularPages "Section" "posts")) 0 }}
     {{ partial "posts.html" . }}
-  {{ end }}
-  {{ partial "signature.html" . }}
+  {{- end }}
+  {{- partial "signature.html" . }}
 {{ end }}

@@ -2,13 +2,13 @@
   <a class="button back" href="/" title="Go home">
     {{ partial "arrow.svg" . }}
   </a>
-  {{ range .Pages.GroupByDate "January 2006" }}
+  {{ range .Pages.GroupByDate "January 2006" -}}
     <h2>{{ .Key }}</h2>
-    {{ range .Pages }}
+    {{ range .Pages -}}
       <a class="cell" href="{{ .Permalink | relURL }}">
         <h3>{{ .Params.wrappedTitle | safeHTML }}</h3>
         <div class="date">{{ dateFormat "January 2, 2006" .Date }}</div>
       </a>
-    {{ end }}
+    {{ end -}}
   {{ end }}
 </div>
