@@ -1,7 +1,7 @@
 title: Qasim Iqbal
 baseURL: https://qas.im/
 params:
-  description: My personal website and archive.
+  description: Qasim's personal website and archive.
   keywords: [Qasim Iqbal, Qasim, Iqbal, drqas, engineer, software, product, writing, photos]
 disableKinds: [sitemap, RSS, taxonomy, taxonomyTerm]
 permalinks:
