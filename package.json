@@ -12,6 +12,6 @@
     "build": "hugo -D --gc && prettier --write public"
   },
   "devDependencies": {
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.2"
   }
 }
